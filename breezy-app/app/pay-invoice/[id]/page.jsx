@@ -1,10 +1,10 @@
-import { getDataById } from '../../../utils/dataFetch';
+import { getInvoiceDataById } from '../../../utils/dataFetch';
 import React from 'react';
 import ClientViewInvoice from '../../../components/client-view-invoice';
 
 export default async function FetchInvoice({ params }) {
   const id = params.id;
-  const data = await getDataById(id);
+  const data = await getInvoiceDataById(id);
   const invoice = data;
 
   function GetDate(date) {
