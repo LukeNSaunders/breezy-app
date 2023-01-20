@@ -9,7 +9,6 @@ export default async function handler(req, res) {
   switch (method) {
     case 'GET':
       try {
-        console.log(id);
         const invoice = await Invoice.findOne({ purchaseOrderNumber: id });
         if (!invoice) {
           return res.status(400).json(invoice);
