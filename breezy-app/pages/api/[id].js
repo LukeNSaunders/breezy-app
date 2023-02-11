@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         res.status(200).json(invoice);
       } catch (error) {
         console.log(error);
-        res.status(400).json(invoice);
+        res.status(400)
       }
       break;
     case 'DELETE':

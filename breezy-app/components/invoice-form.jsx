@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import '../components/invoice-form.css';
 import { submitData } from '../utils/dataFetch';
-import Link from 'next/link';
 import React from 'react';
 import {
   FormControl,
@@ -189,8 +188,6 @@ function InvoiceForm() {
                 />
               </FormControl>
 
-              {/* <button >Add Item</button> */}
-
               <FormControl>
                 <FormLabel>Description</FormLabel>
                 <Input
@@ -226,7 +223,6 @@ function InvoiceForm() {
               <input type='submit' value='CREATE INVOICE' />
             </div>
           </div>
-          {/* </div> */}
         </div>
       </form>
     </ChakraProvider>
@@ -234,8 +230,3 @@ function InvoiceForm() {
 }
 
 export default InvoiceForm;
-
-{
-  /* <Link href='/invoice-list'>
-</Link> */
-}

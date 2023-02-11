@@ -1,10 +1,9 @@
-// import 'server-only'
 
 const uri = 'http://localhost:3000';
 
 
 export async function getData() {
-  const res = await fetch(`${uri}/api/hello`);
+  const res = await fetch(`${uri}/api/controller`);
   if (!res.ok) {
     throw new Error('failed to fetch data');
   }
@@ -23,7 +22,7 @@ export async function getDataById(id) {
 
 export async function submitData(data) {
   try {
-    const res = await fetch(`${uri}/api/hello`, {
+    const res = await fetch(`${uri}/api/controller`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -3,8 +3,9 @@
 import '../components/displayInvoiceList.css';
 import React from 'react';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
+import GetDate from './GetDateFunction';
 
 function DisplayInvoiceList({ invoice }) {
   const [isPaid, setPaidStatus] = useState([]);
@@ -24,40 +25,7 @@ function DisplayInvoiceList({ invoice }) {
   function allInvoices() {
     setPaidRender(false);
   }
-
-  console.log(invoice);
-
-  function GetDate(date) {
-    date = new Date(date);
-
-    let month = date.toLocaleString([], {
-      month: 'short',
-    });
-    let day = date.toLocaleString([], {
-      day: 'numeric',
-    });
-
-    let year = date.toLocaleString([], {
-      year: 'numeric',
-    });
-
-    if (month < 10) {
-      month = `0${month}`;
-    }
-    if (day < 10) {
-      day = `0${day}`;
-    }
-
-    const formatedDate = `${month} ${day}, ${year}`;
-    return formatedDate;
-  }
-
-  const currentDate = GetDate(Date.now());
-  const dueDate = GetDate(invoice.date);
-  console.log(invoice.date);
-
-  const newDate = GetDate(invoice.date);
-
+  
   return (
     <>
       <ChakraProvider>

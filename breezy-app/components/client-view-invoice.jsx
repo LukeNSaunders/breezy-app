@@ -7,14 +7,14 @@ import Image from 'next/image';
 import Logo from '../public/Black logo - no background.png';
 import { ChakraProvider } from '@chakra-ui/react';
 import { useState } from 'react';
-import { Button, ButtonGroup } from '@chakra-ui/react';
+import { Button} from '@chakra-ui/react';
 import { updateData } from '../utils/dataFetch';
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 
 export default function ClientViewInvoice({
   invoice,
   dueDate,
   currentDate,
-  amount,
 }) {
   const [invoiceStatus, setInvoiceStatus] = useState(invoice.paid);
 
@@ -29,6 +29,8 @@ export default function ClientViewInvoice({
 
   return (
     <>
+    <UserProvider>
+
       <ChakraProvider>
         <div className={styles.header}>
           <div className={styles.logo}>
@@ -130,6 +132,8 @@ export default function ClientViewInvoice({
           )}
         </div>
       </ChakraProvider>
+
+    </UserProvider>
     </>
   );
 }
