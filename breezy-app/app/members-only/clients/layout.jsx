@@ -1,12 +1,9 @@
-import React from "react"
+import React from 'react';
 
-export default function ClientLayout ({children}) {
+export default function ClientLayout({ children }) {
   return (
     <>
-    <section>
-    {children}
-
-    </section>
+      <section>{children}</section>
     </>
-  )
+  );
 }

@@ -6,7 +6,6 @@ import Image from 'next/image';
 import logo from '../public/Black logo - no background.png';
 import { BsArrowRight } from 'react-icons/bs';
 import { getData } from '../utils/dataFetch';
-
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -56,7 +55,6 @@ export default function LandingPage() {
         </div>
       </div>
       <div className={styles.inputBox}>
-        {/* <span className={styles.input}> */}
         {showInput && (
           <form onSubmit={handleSubmit} className={styles.input}>
             <input

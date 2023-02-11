@@ -49,8 +49,6 @@ function InvoiceForm() {
       date,
     };
 
-    console.log(newInvoiceData);
-
     pushInvoice({ ...newInvoiceData, paid: false });
 
     setFullName('');

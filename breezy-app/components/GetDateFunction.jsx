@@ -1,10 +1,8 @@
-import React from 'react';
-
 function GetDate(date) {
   date = new Date(date);
 
   let month = date.toLocaleString([], {
-    month: 'short',
+    month: 'numeric',
   });
   let day = date.toLocaleString([], {
     day: 'numeric',
@@ -21,7 +19,8 @@ function GetDate(date) {
     day = `0${day}`;
   }
 
-  const formatedDate = `${month} ${day}, ${year}`;
+  const formatedDate = `${day}/${month}/${year}`;
+
   return formatedDate;
 }
 

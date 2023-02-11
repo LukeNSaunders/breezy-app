@@ -25,7 +25,7 @@ function DisplayInvoiceList({ invoice }) {
   function allInvoices() {
     setPaidRender(false);
   }
-  
+
   return (
     <>
       <ChakraProvider>
