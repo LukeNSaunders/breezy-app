@@ -12,6 +12,13 @@ Breezy is an app aimed at facilitating payments for freelancers. The app is a to
 
 ## Screenshots
 
+<p align="center">
+  <img src="public/breezy-screenshot-1.png" width = 500 />
+  <img src="public/breezy-screenshot-2.png" width = 500 />
+  <img src="public/breezy-screenshot-3.png" width = 500 />
+  <img src="public/breezy-screenshot-4.png" width = 500 />
+</p>
+
 
 ## Getting started
 
