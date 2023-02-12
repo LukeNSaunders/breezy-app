@@ -58,7 +58,7 @@ npm run dev
 
 * [Next JS](https://github.com/vercel/next.js/)
 * [Auth0](https://github.com/auth0/nextjs-auth0)
-* [MongoDB(https://github.com/vercel/next.js/tree/canary/examples/with-mongodb)
+* [MongoDB](https://github.com/vercel/next.js/tree/canary/examples/with-mongodb)
 
 
 
